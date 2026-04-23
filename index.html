@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Portofolio | Beranda</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('wallpaper2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+/* HEADER */
+header {
+    background: url('stars.gif');
+    background-size: cover;
+    background-position: center -300px; /* ini bikin naik ke atas */
+    border-radius: 20px;
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: #ffd6f2;
+    text-shadow: 2px 2px 8px #ff8ed1;
+}
+
+header p {
+    color: white;
+}
+
+/* NAV */
+nav {
+    width: 80%;
+    margin: 0 auto 20px;
+    background: rgba(0,0,0,0.85);
+    border: 3px solid #f7c8e8;
+    border-radius: 15px;
+    padding: 12px;
+    text-align: center;
+}
+
+nav a {
+    color: #ffd6f2;
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* CONTAINER */
+.container {
+    width: 70%;
+    max-width: 900px;
+    margin: 30px auto;
+    background: rgba(0,0,0,0.85);
+    border: 3px solid #f7c8e8;
+    border-radius: 20px;
+    padding: 20px;
+    color: white;
+}
+
+/* 2 KOLOM */
+.content-grid {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+/* GALLERY */
+.gallery-wrapper {
+    width: 35%;
+}
+
+/* TEXT */
+.content-text {
+    width: 65%;
+}
+
+/* MINI GALLERY (VERTIKAL) */
+.mini-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* UKURAN GAMBAR DIBUAT RAPI */
+.mini-gallery img {
+    width: 100%;
+    height: 160px; /* ini bikin semua sama tinggi */
+    object-fit: cover;
+    border-radius: 12px;
+
+    box-shadow: 0 0 10px #ffb6e6,
+                0 0 20px #ff8ed1;
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.mini-gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 15px #ffc0e6,
+                0 0 30px #ff8ed1,
+                0 0 45px #ff69b4;
+}
+
+/* TEXT BOX */
+.text-box {
+    background: rgba(0,0,0,0.7);
+    border: 2px solid #f7c8e8;
+    border-radius: 15px;
+    padding: 15px;
+    margin-bottom: 15px;
+}
+
+.text-box h2 {
+    color: #ffd6f2;
+    text-shadow: 1px 1px 6px #ff8ed1;
+    border-bottom: 1px solid #f7c8e8;
+    padding-bottom: 5px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .content-grid {
+        flex-direction: column;
+    }
+
+    .gallery-wrapper,
+    .content-text {
+        width: 100%;
+    }
+.glitter {
+    height: 4px;
+    margin: 6px 0 10px;
+    border-radius: 10px;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        #ffd6f2,
+        #ff8ed1,
+        #ffd6f2,
+        transparent
+    );
+    background-size: 200px 100%;
+    box-shadow: 0 0 8px #ff8ed1, 0 0 15px #ffc0e6;
+    animation: shine 2.5s linear infinite;
+}
+
+@keyframes shine {
+    0% { background-position: -200px; }
+    100% { background-position: 200px; }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>PORTOFOLIO SALSABILA ADILA</h1>
+    <p>Karya Nyata dari Proses Belajar</p>
+</header>
+
+<nav>
+    <a href="index.html">Beranda</a>
+    <a href="profil.html">Profil</a>
+    <a href="video.html">Video</a>
+    <a href="project.html">Project</a>
+</nav>
+
+<div class="container">
+    <div class="content-grid">
+
+        <!-- GALLERY (5 GAMBAR) -->
+        <div class="gallery-wrapper">
+            <div class="mini-gallery">
+                <img src="img1.jpg">
+                <img src="img2.jpg">
+                <img src="img3.jpg">
+                <img src="img4.jpg">
+                <img src="img5.jpg">
+                <img src="img6.jpg">
+                <img src="img7.jpg">
+            </div>
+        </div>
+
+        <!-- TEXT -->
+        <div class="content-text">
+
+            <div class="text-box">
+                <h2>Selamat Datang di Website Portofolio</h2>
+                <p>Website ini dibuat agar lebih mudah mengakses semua karya-karya saya dan juga sebagai sarana belajar saya tentang HTML</p>
+            </div>
+
+            <div class="text-box">
+                <h2>Tentang Website Ini</h2>
+                <p>Website ini adalah gabungan antara proyek Uprak Video Broadcasting, Teks Argumentasi Bahasa Indonesia secara lisan, serta karya-karya Scratch saya.</p>
+            </div>
+
+            <div class="text-box">
+                <h2>Tujuan Pembuatan Website</h2>
+                <p>Tujuan pembuatan website ini adalah untuk menampilkan karya yang telah saya buat dan juga memahami cara menyusun, menampilkan informasi secara digital, serta mengembangkan kreativitas dan keterampilan teknologi.</p>
+            </div>
+
+            <div class="text-box">
+                <h2>Topik Argumentasi dan Alasan Pemilihan</h2>
+                <p>Topik argumentasi yang saya pilih untuk video adalah tentang IC (Internship Curriculum). Saya memilih topik itu karena termasuk ke dalam dunia pendidikan dan melalui topik ini saya bisa menjelaskan sudut pandang saya mengenai manfaat dan tantangan dalam kegiatan IC ini bagi siswa.</p>
+            </div>
+
+            <div class="text-box">
+                <h2>Harapan dari Video</h2>
+                <p><i>Harapan saya penonton dapat memahami IC lebih jauh, berpikir lebih kritis dan memahami manfaat serta tantangan mengenai program tersebut.</i></p>
+            </div>
+
+            <div class="text-box">
+                <h2>Refleksi, Kesan, dan Pesan</h2>
+                <p>Dengan ujian praktik ini, saya belajar untuk lebih percaya diri, mengembangkan kemampuan berbicara, dan keterampilan HTML. Kesan saya selama belajar di SMPIT Al Haraki sangat menyenangkan karena saya mendapatkan banyak pengalaman, ilmu, dan teman-teman yang baik. Pesan saya, semoga sekolah ini terus menjadi sekolah yang dapat membantu siswa berkembang dan meraih cita-cita mereka.</p>
+            </div>
+
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

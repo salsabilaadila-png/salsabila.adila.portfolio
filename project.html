@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Project</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: url('wallpaper2.jpg') center/cover fixed;
+    margin: 0;
+    color: white;
+}
+
+/* overlay dreamy */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    backdrop-filter: blur(4px);
+    z-index: -1;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(180deg, rgba(255,192,230,0.5), rgba(0,0,0,0.6));
+    padding: 15px;
+    text-align: center;
+    border-bottom: 2px solid #ff8ed1;
+}
+
+header h1 {
+    color: #ffd6f2;
+    text-shadow: 0 0 15px #ff8ed1;
+}
+
+/* NAV */
+nav {
+    background: rgba(0,0,0,0.85);
+    padding: 10px;
+    text-align: center;
+    border-bottom: 2px solid #ff8ed1;
+}
+
+nav a {
+    color: #ffd6f2;
+    margin: 0 12px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    text-shadow: 0 0 10px #ff8ed1;
+}
+
+/* CONTAINER */
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+/* TITLE BOX */
+.title-box {
+    background: rgba(0,0,0,0.6);
+    border: 2px solid #ff8ed1;
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 0 15px rgba(255,142,209,0.2);
+}
+
+.title-box h2 {
+    background: linear-gradient(90deg, #ffd6f2, #ff8ed1);
+    color: black;
+    padding: 6px;
+    border-radius: 6px;
+}
+
+/* GLITTER */
+.glitter {
+    height: 6px;
+    margin: 8px 0;
+    border-radius: 10px;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        #ffd6f2,
+        #ff8ed1,
+        #ffd6f2,
+        transparent
+    );
+    box-shadow: 0 0 10px #ff8ed1, 0 0 20px #ffc0e6;
+    animation: shine 3s linear infinite;
+}
+
+@keyframes shine {
+    0% { background-position: -200px; }
+    100% { background-position: 200px; }
+}
+
+/* GRID PROJECT */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+/* CARD */
+.project-card {
+    background: rgba(0,0,0,0.6);
+    border: 2px solid #ff8ed1;
+    border-radius: 12px;
+    overflow: hidden;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 0 15px rgba(255,142,209,0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 25px #ff8ed1;
+}
+
+/* IMAGE */
+.project-card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+/* LINK */
+.project-card a {
+    display: block;
+    padding: 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+    background: linear-gradient(90deg, #ffd6f2, #ff8ed1);
+    transition: 0.3s;
+}
+
+.project-card a:hover {
+    background: linear-gradient(90deg, #ffc0e6, #ff69b4);
+    box-shadow: 0 0 15px #ff8ed1;
+}
+
+/* FOOTER */
+footer {
+    text-align: center;
+    padding: 15px;
+    margin-top: 20px;
+    color: #ffd6f2;
+    text-shadow: 0 0 10px #ff8ed1;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .project-card img {
+        height: 120px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>My Project☆</h1>
+    <p>Karya Nyata dari Proses Belajar</p>
+</header>
+
+<nav>
+    <a href="index.html">Beranda</a>
+    <a href="profil.html">Profil</a>
+    <a href="video.html">Video</a>
+    <a href="project.html">Project</a>
+</nav>
+
+<div class="container">
+
+    <div class="title-box">
+        <h2>My Project</h2>
+        <div class="glitter"></div>
+        <p><i>Halaman ini menampilkan kumpulan proyek yang pernah saya buat. Klik untuk melihat karya ✨</i></p>
+    </div>
+
+    <div class="project-grid">
+
+        <div class="project-card">
+            <img src="imgproject1.jpg">
+            <a href="https://www.youtube.com/watch?v=WIpCptjVerk" target="_blank">
+                Video Argumentasi
+            </a>
+        </div>
+
+        <div class="project-card">
+            <img src="imgproject2.jpg">
+            <a href="https://link-proyek-2.com" target="_blank">
+                Website Portofolio
+            </a>
+        </div>
+
+        <div class="project-card">
+            <img src="imgproject3.jpg">
+            <a href="https://scratch.mit.edu/projects/1162343389/" target="_blank">
+                Game Edukasi
+            </a>
+        </div>
+
+        <div class="project-card">
+            <img src="imgproject4.jpg">
+            <a href="https://scratch.mit.edu/projects/1080377418/" target="_blank">
+                Proyek Lainnya
+            </a>
+        </div>
+
+    </div>
+
+</div>
+
+<footer>
+    <p>© 2026 Salsabila</p>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<title>Profil</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: url('wallpaper2.jpg') center/cover fixed;
+    margin: 0;
+    color: white;
+}
+
+/* overlay dreamy */
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.4);
+    backdrop-filter: blur(4px);
+    z-index: -1;
+}
+
+/* HEADER */
+header {
+    background: linear-gradient(180deg, rgba(255,192,230,0.5), rgba(0,0,0,0.6));
+    padding: 15px;
+    text-align: center;
+    border-bottom: 2px solid #ff8ed1;
+    backdrop-filter: blur(6px);
+}
+
+header h1 {
+    color: #ffd6f2;
+    text-shadow: 0 0 15px #ff8ed1;
+}
+
+/* NAV */
+nav {
+    background: rgba(0,0,0,0.85);
+    padding: 10px;
+    text-align: center;
+    border-bottom: 2px solid #ff8ed1;
+}
+
+nav a {
+    color: #ffd6f2;
+    margin: 0 12px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    text-shadow: 0 0 10px #ff8ed1;
+}
+
+/* LAYOUT */
+.container {
+    width: 90%;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: 260px 1fr;
+    gap: 15px;
+}
+
+/* SIDEBAR */
+.sidebar {
+    background: rgba(0,0,0,0.6);
+    border: 2px solid #ff8ed1;
+    border-radius: 15px;
+    padding: 10px;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 0 20px rgba(255,142,209,0.3);
+}
+
+/* FOTO */
+.profile-pic {
+    width: 100%;
+    border-radius: 10px;
+    border: 3px solid #ff8ed1;
+    box-shadow: 0 0 20px #ff8ed1;
+}
+
+/* ✨ CONTACT (RETRO STYLE) */
+.contact-box {
+    margin-top: 15px;
+    background: rgba(0,0,0,0.8);
+    border: 1px solid #999;
+    border-radius: 4px;
+    padding: 6px;
+    font-family: Tahoma, Arial, sans-serif;
+    font-size: 11px;
+    box-shadow: inset 0 0 5px rgba(255,255,255,0.1);
+}
+
+/* header kecil */
+.contact-title {
+    background: linear-gradient(#dfe6ef, #aab4c2);
+    color: #222;
+    padding: 3px;
+    text-align: center;
+    border-radius: 2px;
+    font-weight: bold;
+    font-size: 11px;
+    border: 1px solid #888;
+    margin-bottom: 6px;
+    text-transform: lowercase;
+}
+
+/* layout jadul */
+.contact-actions {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2px 10px;
+}
+
+/* item */
+.contact-actions span {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding: 2px 4px;
+    background: transparent;
+    border-radius: 2px;
+    font-size: 11px;
+    cursor: pointer;
+    color: #ddd;
+}
+
+/* hover klasik */
+.contact-actions span:hover {
+    background: rgba(255,255,255,0.1);
+    text-decoration: underline;
+}
+
+/* MAIN */
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* BOX */
+.box {
+    background: rgba(0,0,0,0.6);
+    border: 2px solid #ff8ed1;
+    border-radius: 12px;
+    padding: 10px;
+    backdrop-filter: blur(6px);
+    box-shadow: 0 0 15px rgba(255,142,209,0.2);
+}
+
+.box h2 {
+    font-size: 14px;
+    background: linear-gradient(90deg, #ffd6f2, #ff8ed1);
+    color: black;
+    padding: 6px;
+    border-radius: 6px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Profilku☆</h1>
+</header>
+
+<nav>
+    <a href="index.html">Beranda</a>
+    <a href="profil.html">Profil</a>
+    <a href="video.html">Video</a>
+    <a href="project.html">Project</a>
+</nav>
+
+<div class="container">
+
+    <!-- SIDEBAR -->
+    <div class="sidebar">
+        <img src="me.jpeg" class="profile-pic">
+
+        <div class="contact-box">
+            <div class="contact-title">contacting salsabila</div>
+            <div class="contact-actions">
+                <span>● add to friends</span>
+                <span>★ add to favorites</span>
+                <span>✉ send message</span>
+                <span>🚫 block user</span>
+                <span>👥 add to group</span>
+                <span>⚑ report user</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- MAIN -->
+<div class="main">
+
+    <div class="box">
+        <h2>Profil Singkat</h2>
+        <p><i>Salsabila Adila Husna 9 Al Alaa SMPIT Al-Haraki</i></p>
+    </div>
+
+    <div class="box">
+        <h2>Tentang Saya</h2>
+        <p><i>Hai, aku Caca anak pertama dari dua bersaudara. Adikku bernama Keenan. Adikku sekarang kelas 4 di SDIT Al Haraki. Ayahku bernama Beck, beliau bekerja di PT. Dunamis. Ibu ku bernama Rika, beliau sebagai ibu rumah tangga yang menemani kami belajar di rumah setiap hari.</i></p>
+    </div>
+
+    <div class="box">
+        <h2>Minat dan Bakat</h2>
+        <p><i>Aku memiliki hobi membaca dan menggambar. Di sekolah aku menyukai pelajaran B.Inggris karena sangat relate dengan pengetahuan bahasa yang ingin aku tingkatkan.</i></p>
+    </div>
+
+    <div class="box">
+        <h2>Cita-cita dan Harapan</h2>
+        <p><i>Cita-cita aku adalah menjadi pribadi yang sukses dan bermanfaat bagi banyak orang. Aku ingin memiliki pekerjaan yang saya sukai serta bisa membanggakan orang tua. Harapan aku juga dapat terus belajar, mengembangkan kemampuan.</i></p>
+    </div>
+
+    <div class="box">
+        <h2>Kesan dan Pesan Selama Kelas IX</h2>
+        <p><i>Selama belajar di kelas 9 SMPIT Al Haraki, saya mendapatkan banyak pengalaman yang berharga. Saya bertemu dengan teman-teman yang baik dan guru-guru yang sabar dalam membimbing.</i></p>
+    </div>
+
+</div>
+
+    </div>
+
+</body>
+</html>
